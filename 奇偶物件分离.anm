@@ -1,0 +1,8 @@
+--track0:分离百分比,-100.00,100.00,0.00
+--track1:方向类型,-1,1,-1,1
+w = (obj.screen_w + obj.w) / 2
+v = (((obj.index % 2) - 0.5) * 2) * (obj.track0 / 100 * w)
+if obj.track1 == -1 then obj.ox = v 
+elseif obj.track1 == 0 then obj.oy = v
+else obj.oz = v
+end

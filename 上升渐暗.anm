@@ -1,0 +1,4 @@
+--track0:上升高度,0,100,60,0.01
+
+obj.effect("坐标", "Y", math.floor((obj.frame/obj.totalframe*-1*obj.track0)/4)*4)
+obj.effect("透明度", "透明度", math.floor((obj.frame/obj.totalframe*100)/4)*4)
